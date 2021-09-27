@@ -1,0 +1,23 @@
+{
+	"name": "apis",
+	"version": "1.0.0",
+	"description": "API's",
+	"main": "index.js",
+	"scripts": {
+		"sass": "sass --watch assets/sass:public/css"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/KCode100/APIs.git"
+	},
+	"author": "Kivi Corn",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/KCode100/APIs/issues"
+	},
+	"homepage": "https://github.com/KCode100/APIs#readme",
+	"dependencies": {
+		"@11ty/eleventy": "^0.12.1",
+		"sass": "^1.42.1"
+	}
+}

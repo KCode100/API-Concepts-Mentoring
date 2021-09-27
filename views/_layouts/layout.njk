@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ metadata.language }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ title }} | {{ metadata.title }}</title>
+        <meta name="description" content="{{ description }}">
+        <link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css" />
+		<link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"/>
+		<link rel="stylesheet" href="../css/style.css" />
+    </head>
+    <body class="{{ body_class }}">
+        <div class="wrap">
+            {% include "../_includes/header.njk" %}
+            {% include "../_includes/nav.njk" %}
+                <div class="main" id="main">
+                    {{ content | safe }}
+                </div>
+            {% include "../_includes/footer.njk" %}
+        </div>
+		<script src="/js/scripts.js"></script>
+    </body>
+</html>
