@@ -92,6 +92,7 @@ footer a {
 }
 .unsplash input[type=search] {
   padding: 8px;
+  width: 60%;
 }
 .unsplash .container {
   position: relative;
