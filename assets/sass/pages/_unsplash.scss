@@ -1,0 +1,35 @@
+.unsplash {
+	form {
+		margin-top: 50px;
+	}
+
+	input[type='search'] {
+		padding: 8px;
+	}
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+
+		div {
+			flex: 1;
+		}
+
+		img {
+			margin: 0;
+		}
+
+		.portrait {
+			img {
+				height: 100%;
+			}
+		}
+
+		.landscape {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
+		}
+	}
+}

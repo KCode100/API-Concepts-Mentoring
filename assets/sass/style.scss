@@ -2,5 +2,8 @@
 @use 'components/nav';
 @use 'components/footer';
 @use 'components/header';
+@use 'components/current-page';
 
 @use 'base/typography';
+
+@use 'pages/unsplash';

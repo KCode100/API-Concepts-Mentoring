@@ -78,4 +78,39 @@ footer a {
   text-decoration: none;
 }
 
+.home li:nth-child(1) a,
+.random-user li:nth-child(2) a,
+.weather li:nth-child(3) a,
+.unsplash li:nth-child(4) a,
+.store li:nth-child(5) a {
+  color: #0366d6;
+  background-color: #e9e9e9;
+}
+
+.unsplash form {
+  margin-top: 50px;
+}
+.unsplash input[type=search] {
+  padding: 8px;
+}
+.unsplash .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.unsplash .container div {
+  flex: 1;
+}
+.unsplash .container img {
+  margin: 0;
+}
+.unsplash .container .portrait img {
+  height: 100%;
+}
+.unsplash .container .landscape {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 /*# sourceMappingURL=style.css.map */
