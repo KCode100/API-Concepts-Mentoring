@@ -2,12 +2,20 @@
 const portraitEl = document.querySelector('.portrait');
 const landscapeEl = document.querySelector('.landscape');
 const refreshEl = document.querySelector('.refresh');
+const searchEl = document.querySelector('.input');
+const searchBtn = document.querySelector('.submit');
 // API
 const portraitCount = 1;
 const landscapeCount = 2;
-const apiKey = 'DZUlmlIlds57GT3j-aNLm58Ug3n4eUmzquAiub4LhRg';
-const portraitUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${portraitCount}&orientation=portrait`;
-const landscapeUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${landscapeCount}&orientation=landscape`;
+const apiKey = 'm5D1UzFiF6AHA02Kxar1vW3JPaycqKxPq_znG-7PqP8';
+
+// Search Feature
+function displaySearchResults() {
+	portraitEl.innerHTML = '';
+	landscapeEl.innerHTML = '';
+	getPortrait();
+	getLandscape();
+}
 
 function displayPortrait(data) {
 	// Create link element
@@ -36,19 +44,27 @@ function displayLandscape(data) {
 }
 
 async function getPortrait() {
+	let input = searchEl.value;
+	const portraitUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${portraitCount}&orientation=portrait&query=${input}`;
 	try {
 		const response = await fetch(portraitUrl);
 		const data = await response.json();
 		displayPortrait(data);
-	} catch (error) {}
+	} catch (error) {
+		console.log(error);
+	}
 }
 
 async function getLandscape() {
+	let input = searchEl.value;
+	const landscapeUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${landscapeCount}&orientation=landscape&query=${input}`;
 	try {
 		const response = await fetch(landscapeUrl);
 		const data = await response.json();
 		displayLandscape(data);
-	} catch (error) {}
+	} catch (error) {
+		console.log(error);
+	}
 }
 
 getPortrait();
@@ -60,3 +76,5 @@ refreshEl.addEventListener('click', function () {
 	getPortrait();
 	getLandscape();
 });
+
+searchBtn.addEventListener('click', displaySearchResults);
