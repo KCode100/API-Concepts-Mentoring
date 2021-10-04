@@ -94,15 +94,27 @@ footer a {
   padding: 8px;
 }
 .unsplash .container {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+}
+.unsplash .container .refresh {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
 }
 .unsplash .container div {
   flex: 1;
 }
 .unsplash .container img {
   margin: 0;
+}
+.unsplash .container img:hover {
+  transition: all 0.2s;
+  opacity: 0.85;
 }
 .unsplash .container .portrait img {
   height: 100%;
@@ -111,6 +123,9 @@ footer a {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+}
+.unsplash .container .landscape img {
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
