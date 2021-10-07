@@ -171,4 +171,49 @@ footer a {
   color: #230303;
 }
 
+.dictionary input {
+  padding: 8px;
+  width: 60%;
+}
+.dictionary .speak {
+  color: #0077f3;
+  border: 1px solid #cbcbcb;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.dictionary .speak:hover {
+  background-color: #efefef;
+}
+.dictionary .results h2,
+.dictionary .results h3,
+.dictionary .results h4 {
+  border: none;
+}
+.dictionary .results h3 {
+  font-size: 18px;
+  font-weight: normal;
+}
+.dictionary .results h4 {
+  font-weight: normal;
+  border: none;
+  color: #717171;
+  font-size: 16px;
+}
+.dictionary .results h4,
+.dictionary .results p {
+  color: #717171;
+}
+.dictionary .results ul {
+  list-style-type: none;
+  margin: 0 0 30px -8px;
+  padding: 0;
+}
+.dictionary .results li {
+  display: inline-block;
+  padding: 8px;
+}
+
 /*# sourceMappingURL=style.css.map */

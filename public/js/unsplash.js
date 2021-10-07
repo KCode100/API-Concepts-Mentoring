@@ -8,6 +8,8 @@ const searchBtn = document.querySelector('.submit');
 const portraitCount = 1;
 const landscapeCount = 2;
 const apiKey = 'DZUlmlIlds57GT3j-aNLm58Ug3n4eUmzquAiub4LhRg';
+// spare API key
+// const apiKey = 'm5D1UzFiF6AHA02Kxar1vW3JPaycqKxPq_znG-7PqP8';
 
 // Search Feature
 function displaySearchResults(e) {
