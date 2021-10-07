@@ -192,6 +192,9 @@ footer a {
 .dictionary .results h4 {
   border: none;
 }
+.dictionary .results h2 {
+  display: inline-block;
+}
 .dictionary .results h3 {
   font-size: 18px;
   font-weight: normal;
