@@ -1,8 +1,19 @@
-.home li:nth-child(1) a,
-.random-user li:nth-child(2) a,
-.weather li:nth-child(3) a,
-.unsplash li:nth-child(4) a,
-.store li:nth-child(5) a {
+.home nav li:nth-child(1) a,
+.random-user nav li:nth-child(2) a,
+.weather nav li:nth-child(3) a,
+.unsplash nav li:nth-child(4) a,
+.dictionary nav li:nth-child(5) a {
 	color: #0366d6;
-	background-color: rgb(233, 233, 233);
+	background-color: rgb(222, 222, 222);
+	border-bottom: 3px solid rgb(195, 195, 195);
+}
+
+@media (max-width: 850px) {
+	.home nav li:nth-child(1) a,
+	.random-user nav li:nth-child(2) a,
+	.weather nav li:nth-child(3) a,
+	.unsplash nav li:nth-child(4) a,
+	.dictionary nav li:nth-child(5) a {
+		border: 3px solid rgb(195, 195, 195);
+	}
 }

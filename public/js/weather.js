@@ -10,7 +10,8 @@ const extraDescEl = document.querySelector('.extra-desc');
 let city = '';
 const format = 'metric';
 const weatherKey = '473d8db7c8988d4ee2df88190ff5f201';
-function getData() {
+function getData(e) {
+	e.preventDefault();
 	// remove error msg
 	msgEl.hidden = true;
 
